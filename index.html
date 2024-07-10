@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Artificial Intellegence</title>
+    <title>Search Artificial Intelligence</title>
     <link rel="icon" href="SAI.png" type="image/png">
     <style>
         a {
@@ -25,11 +25,16 @@
             border: 1px solid #ccc;
             outline: none;
         }
-        .item-list {
-            display: flex;
-            flex-direction: column;
-            align-items: left;
+        .category {
             margin-top: 20px;
+        }
+        .category h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .item-list {
+            margin-left: 20px;
         }
         p {
             color: #000000ce;
@@ -37,7 +42,6 @@
             margin: 5px 0;
             display: flex;
             align-items: left;
-            font-family: Helvetica, sans-serif;
         }
         img {
             width: 50px;
@@ -52,61 +56,91 @@
 <body>
     <div class="search-container">
         <img src="SAI.png"> 
-        <input type="text" id="searchBox" placeholder="Search AI" onkeyup="filterList()">
+        <input type="text" id="searchBox" placeholder="Search AI...(Don't Search Category)" onkeyup="filterList()">
         <a href="respond.html">Report/Comment</a>
     </div>
 
-    <div id="itemList" class="item-list">
-        <br>
-        <br>
-        <p>&nbsp;<a href="https://www.assemblyai.com/" target="_blank">Assembly AI</a>&nbsp; Transcribes audio and video recordings into text.</p>
-        <p>&nbsp;<a href="https://www.artbreeder.com/" target="_blank">Artbreeder</a>&nbsp; Allows users to create and edit images using AI.</p>
-        <p>&nbsp;<a href="https://otter.ai/" target="_blank">AI Sense(Otter AI)</a>&nbsp;AI-driven transcription and meeting software.</p>
-        <p>&nbsp;<a href="https://www.appzen.com/" target="_blank">AppZen</a>&nbsp;AI-driven expense report auditing.</p>
-        <p>&nbsp;<a href="https://en.akinator.com/" target="_blank">Akinator</a>&nbsp;AI-based guessing game where the AI tries to guess characters you're thinking of. </p>
-        <p>&nbsp;<a href="https://ai-art.tokyo/en/" target="_blank">AI Gahaku</a>&nbsp;AI-powered portrait generator that creates Renaissance-style portraits from photos. </p>
-        <p>&nbsp;<a href="https://www.aiva.ai/" target="_blank">AIVA</a>&nbsp;AI-driven music composition platform that creates original compositions.</p>
-        <p>&nbsp;<a href="https://animalcrossing.nintendo.com/" target="_blank">&nbsp;Animal Crossing</a>In-game AI characters that interact with players in various activities.</p>
-        <p>&nbsp;<a href="https://aidungeon.com/" target="_blank">AI Dungeon</a>&nbsp; is a text-based, AI generated fantasy simulation with infinite possibilities.</p>
-        <p>&nbsp;<a href="https://www.playalterego.com/" target="_blank">Alter Ego</a>&nbsp;AI-driven life simulation game where players make choices to shape their character's life.</p>
-        <p>&nbsp;<a href="https://www.gog.com/en/game/ai_war_2" target="_blank">&nbsp;AI war II</a>A real-time strategy game featuring advanced AI opponents.</p>
-        <p>&nbsp;<a href="https://store.steampowered.com/app/375910/Anno_2205/" target="_blank">Anno 2205</a>&nbsp;A city-building and economic simulation game where AI-controlled factions compete for resources.</p>
-        <p>&nbsp;<a href="https://botpress.com/" target="_blank">Botpress</a>&nbsp;Open-source platform for building AI-powered chatbots and virtual assistants. </p>
-        <p>&nbsp;<a href="https://www.blackbox.ai/" target="_blank">Blackbox</a>&nbsp;An AI-powered code suggestion tool that helps developers write code faster by providing smart code completions and suggestions.</p>
-        <p>&nbsp;<a href="https://www.bugsnag.com/" target="_blank">Bugsnag</a>&nbsp;An AI-powered error monitoring tool that helps developers detect, diagnose, and fix errors in their code.</p>
-        <p>&nbsp;<a href="https://www.builder.ai/" target="_blank">Builder.AI</a>&nbsp;An AI-powered platform that helps developers build custom software by automating various aspects of the development process.</p>
-        <p>&nbsp;<a href="https://botnik.org/" target="_blank">Botnik</a>&nbsp;An AI-powered creative tool that helps generate humorous and interesting content by blending human creativity with machine learning.</p>
-        <p>&nbsp;<a href="https://www.bitmoji.com" target="_blank">Bitmoji</a>&nbsp;An AI-powered tool that creates personalized avatars and stickers for fun communication on social media and messaging apps.</p>
-        <p>&nbsp;<a href="https://boredhumans.com/" target="_blank">Bored Humans</a>&nbsp;A collection of fun and quirky AI games and tools designed for entertainment and creativity.</p>
-        <p>&nbsp;<a href="https://www.brain.fm/" target="_blank">Brain.fm</a>&nbsp;An AI-powered music platform that generates tunes to help users focus, relax, or sleep better.</p>
-        <p><a href="https://botlogic.us/" target="_blank">BotLogic</a>&nbsp;A fun and educational AI game that teaches basic programming and logic skills through interactive puzzles.</p>
-        <p>&nbsp;<a href="https://www.botify.com/" target="_blank">Botify</a>&nbsp;AI-powered SEO platform that helps optimize websites for search engines.</p>
-        <p>&nbsp;<a href="https://buddy.works/" target="_blank">Buddy</a>&nbsp;AI-powered CI/CD tool that automates the software development lifecycle, from coding to deployment.</p>
-        <p>&nbsp;<a href="https://www.beautiful.ai/" target="_blank">Beatiful.AI</a>&nbsp;AI-powered presentation tool that helps create visually appealing slides.</p>
-        <p>&nbsp;<a href="https://www.browserstack.com/home" target="_blank">BrowserStack</a>&nbsp;AI-powered testing platform for websites and mobile applications across different browsers and devices.</p>
-        <p>&nbsp;<a href="https://www.befunky.com/" target="_blank">Befunky</a>&nbsp;AI-powered photo editor and graphic design tool.</p>
-        <p>&nbsp;<a href="https://buzzsumo.com/" target="_blank">BuzzSumo</a>&nbsp;AI-powered content discovery and social media analytics tool.</p>
-        <p>&nbsp;<a href="https://www.boomeranggmail.com/" target="_blank">Boomerang for Gmail</a>&nbsp;AI-powered email productivity tool that schedules emails and reminders. </p>
-        <p>&nbsp;<a href="https://www.b12.io/" target="_blank">B12</a>&nbsp;AI-powered website builder that combines automation with human expertise.</p>
-        <p>&nbsp;<a href="" target="_blank"></a>&nbsp;</p>
-        <p>&nbsp;<a href="" target="_blank"></a>&nbsp;</p>
-        <p>&nbsp;<a href="" target="_blank"></a>&nbsp;</p>
-        <p>&nbsp;<a href="" target="_blank"></a>&nbsp;</p>
-        <p>&nbsp;<a href="" target="_blank"></a>&nbsp;</p>
+    <div id="categories">
+        <div class="category">
+            <h2>Transcription</h2>
+            <div class="item-list">
+                <p>&nbsp;<a href="https://www.assemblyai.com/" target="_blank">Assembly AI</a>&nbsp; Transcribes audio and video recordings into text.</p>
+                <p>&nbsp;<a href="https://otter.ai/" target="_blank">AI Sense (Otter AI)</a>&nbsp; AI-driven transcription and meeting software.</p>
+            </div>
+        </div>
 
+        <div class="category">
+            <h2>Image Creation</h2>
+            <div class="item-list">
+                <p>&nbsp;<a href="https://www.artbreeder.com/" target="_blank">Artbreeder</a>&nbsp; Allows users to create and edit images using AI.</p>
+                <p>&nbsp;<a href="https://ai-art.tokyo/en/" target="_blank">AI Gahaku</a>&nbsp; AI-powered portrait generator that creates Renaissance-style portraits from photos.</p>
+            </div>
+        </div>
 
+        <div class="category">
+            <h2>Music Composition</h2>
+            <div class="item-list">
+                <p>&nbsp;<a href="https://www.aiva.ai/" target="_blank">AIVA</a>&nbsp; AI-driven music composition platform that creates original compositions.</p>
+                <p>&nbsp;<a href="https://www.brain.fm/" target="_blank">Brain.fm</a>&nbsp; An AI-powered music platform that generates tunes to help users focus, relax, or sleep better.</p>
+            </div>
+        </div>
 
+        <div class="category">
+            <h2>Games</h2>
+            <div class="item-list">
+                <p>&nbsp;<a href="https://en.akinator.com/" target="_blank">Akinator</a>&nbsp; AI-based guessing game where the AI tries to guess characters you're thinking of.</p>
+                <p>&nbsp;<a href="https://aidungeon.com/" target="_blank">AI Dungeon</a>&nbsp; Text-based, AI generated fantasy simulation with infinite possibilities.</p>
+                <p>&nbsp;<a href="https://www.playalterego.com/" target="_blank">Alter Ego</a>&nbsp; AI-driven life simulation game where players make choices to shape their character's life.</p>
+                <p>&nbsp;<a href="https://www.gog.com/en/game/ai_war_2" target="_blank">AI War II</a>&nbsp; A real-time strategy game featuring advanced AI opponents.</p>
+                <p>&nbsp;<a href="https://store.steampowered.com/app/375910/Anno_2205/" target="_blank">Anno 2205</a>&nbsp; A city-building and economic simulation game where AI-controlled factions compete for resources.</p>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>Development Tools</h2>
+            <div class="item-list">
+                <p>&nbsp;<a href="https://botpress.com/" target="_blank">Botpress</a>&nbsp; Open-source platform for building AI-powered chatbots and virtual assistants.</p>
+                <p>&nbsp;<a href="https://www.blackbox.ai/" target="_blank">Blackbox</a>&nbsp; An AI-powered code suggestion tool that helps developers write code faster by providing smart code completions and suggestions.</p>
+                <p>&nbsp;<a href="https://www.bugsnag.com/" target="_blank">Bugsnag</a>&nbsp; An AI-powered error monitoring tool that helps developers detect, diagnose, and fix errors in their code.</p>
+                <p>&nbsp;<a href="https://www.builder.ai/" target="_blank">Builder.AI</a>&nbsp; An AI-powered platform that helps developers build custom software by automating various aspects of the development process.</p>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>Other</h2>
+            <div class="item-list">
+                <p>&nbsp;<a href="https://botnik.org/" target="_blank">Botnik</a>&nbsp; An AI-powered creative tool that helps generate humorous and interesting content by blending human creativity with machine learning.</p>
+                <p>&nbsp;<a href="https://www.bitmoji.com" target="_blank">Bitmoji</a>&nbsp; An AI-powered tool that creates personalized avatars and stickers for fun communication on social media and messaging apps.</p>
+                <p>&nbsp;<a href="https://boredhumans.com/" target="_blank">Bored Humans</a>&nbsp; A collection of fun and quirky AI games and tools designed for entertainment and creativity.</p>
+                <p>&nbsp;<a href="https://botlogic.us/" target="_blank">BotLogic</a>&nbsp; A fun and educational AI game that teaches basic programming and logic skills through interactive puzzles.</p>
+                <p>&nbsp;<a href="https://www.b12.io/" target="_blank">B12</a>&nbsp; An AI-powered website builder that combines automation with human expertise.</p>
+            </div>
+        </div>
     </div>
+
     <p>More AIs Coming Soon! <b class="hidden-text">qwertyuiopasdfghjklzxcvbnm123456.7890-=[]\`;',/.~!@#$%^&*()_+{}|:"<>?QWERTYUIOPASDFGHJKLZXCVBNM</b></p>
+
     <script>
         function filterList() {
             let input = document.getElementById('searchBox');
             let filter = input.value.toLowerCase();
-            let items = document.querySelectorAll('#itemList p');
+            let categories = document.querySelectorAll('.category');
 
-            items.forEach(function(item) {
-                let text = item.textContent || item.innerText;
-                item.style.display = text.toLowerCase().indexOf(filter) > -1 ? '' : 'none';
+            categories.forEach(function(category) {
+                let items = category.querySelectorAll('p');
+                let displayCategory = false;
+
+                items.forEach(function(item) {
+                    let text = item.textContent || item.innerText;
+                    if (text.toLowerCase().indexOf(filter) > -1) {
+                        item.style.display = '';
+                        displayCategory = true;
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+
+                category.style.display = displayCategory ? '' : 'none';
             });
         }
     </script>
