@@ -10,10 +10,16 @@
     <fieldset>
     <form action="https://formspree.io/f/mzzpbwzk" method="POST">
         Is it a comment or report?<br>
-        Report:<input type="radio" name="Report" id="Report" value="Report">  Comment:<input type="radio" name="Comment" id="Comment" value="Comment" ><br><br>
+        <select name="Respond Type" id="Respond Type" required>
+            <option value="Select">Select One...</option>
+            <option value="Report">Report</option>
+            <option value="Comment">Comment</option>
+        </select><br><br>
         <input type="text" name="name" id="Name" placeholder="Full Name" required><br><br>
         <input type="email" name="Email" placeholder="Email" required><br><br>
-        <textarea name="Message" id="Message" placeholder="Comment/Report" cols="50" rows="9" required></textarea><br><br>
+        <textarea name="Message" id="Message" placeholder="Comment/Report" cols="50" rows="9" required></textarea><br>
+        <p>Upload file <sup><em>Optional</em></sup></p>
+        <input type="file" name="file"><br><br>
         <input type="submit" value="Submit">
     </form>
     </fieldset>
